@@ -4,12 +4,11 @@
   "description": "**¡Sígueme en Youtube para más contenido de React y Javascript!** 👉 https://www.youtube.com/midudev",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "vercel-build": "npm run build",
-    "build": "webpack --mode development",
+    "build": "webpack",
     "dev": "webpack serve --open --mode development",
-    "start:dev": "npx serve dist -s",
-    "serve:dev": "npm run build && npm run start:dev"
+    "serve:dev": "webpack --mode development && npx serve dist -s",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

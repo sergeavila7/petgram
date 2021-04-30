@@ -40,10 +40,6 @@ module.exports = {
       ],
     }),
     new WorkboxWebpackPlugin.GenerateSW({
-      swDest: "service-worker.js",
-      clientsClaim: true,
-      skipWaiting: true,
-      maximumFileSizeToCacheInBytes: 5000000,
       runtimeCaching: [
         {
           urlPattern: new RegExp(
